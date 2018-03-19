@@ -16,6 +16,7 @@
 		7FA4762F2028EAAA00F91C2D /* HackwichThreeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4762E2028EAAA00F91C2D /* HackwichThreeUITests.swift */; };
 		7FA4763D2028F25A00F91C2D /* ViewControllerTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4763C2028F25A00F91C2D /* ViewControllerTwoViewController.swift */; };
 		86DCE86B205F3AB00084B233 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DCE86A205F3AB00084B233 /* secondViewController.swift */; };
+		86DCE873205F4D430084B233 /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DCE872205F4D430084B233 /* thirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7FA476302028EAAA00F91C2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FA4763C2028F25A00F91C2D /* ViewControllerTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwoViewController.swift; sourceTree = "<group>"; };
 		86DCE86A205F3AB00084B233 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = secondViewController.swift; path = ../secondViewController.swift; sourceTree = "<group>"; };
+		86DCE872205F4D430084B233 /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				7FA4760E2028EAA900F91C2D /* AppDelegate.swift */,
 				7FA476102028EAAA00F91C2D /* ViewController.swift */,
 				86DCE86A205F3AB00084B233 /* secondViewController.swift */,
+				86DCE872205F4D430084B233 /* thirdViewController.swift */,
 				7FA476122028EAAA00F91C2D /* Main.storyboard */,
 				7FA4763C2028F25A00F91C2D /* ViewControllerTwoViewController.swift */,
 				7FA476152028EAAA00F91C2D /* Assets.xcassets */,
@@ -267,6 +270,7 @@
 			files = (
 				86DCE86B205F3AB00084B233 /* secondViewController.swift in Sources */,
 				7FA4763D2028F25A00F91C2D /* ViewControllerTwoViewController.swift in Sources */,
+				86DCE873205F4D430084B233 /* thirdViewController.swift in Sources */,
 				7FA476112028EAAA00F91C2D /* ViewController.swift in Sources */,
 				7FA4760F2028EAA900F91C2D /* AppDelegate.swift in Sources */,
 			);
