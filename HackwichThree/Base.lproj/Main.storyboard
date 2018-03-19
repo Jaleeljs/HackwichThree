@@ -10,52 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller Two View Controller-->
-        <scene sceneID="v8L-W7-sYB">
-            <objects>
-                <viewController id="w6U-Ns-SQt" customClass="ViewControllerTwoViewController" customModule="HackwichThree" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zhU-Hz-iNH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYR-nC-Non">
-                                <rect key="frame" x="139" y="374" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emV-Zq-U6H">
-                                <rect key="frame" x="133" y="303" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Convert">
-                                    <color key="titleColor" red="0.72340381145477295" green="0.15183438148587608" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="convertButtonPressed:" destination="w6U-Ns-SQt" eventType="touchUpInside" id="tny-2o-NVi"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Enter Degrees Fahrenheit" allowsEditingTextAttributes="YES" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="eRI-rV-Sax">
-                                <rect key="frame" x="61" y="234" width="198" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="1G7-TL-PDp"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="6sB-Up-ZUE"/>
-                    <connections>
-                        <outlet property="convertedTemp" destination="uYR-nC-Non" id="hOZ-UJ-LLD"/>
-                        <outlet property="firstTemp" destination="zhU-Hz-iNH" id="Zvc-l5-YYS"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BTE-Bu-bnB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-73.125" y="50.70422535211268"/>
-        </scene>
         <!--About Me-->
         <scene sceneID="uiR-Na-hDH">
             <objects>
@@ -146,18 +100,66 @@
                     </tabBar>
                     <connections>
                         <segue destination="BkA-Fb-59p" kind="relationship" relationship="viewControllers" id="ZyW-pg-eVF"/>
-                        <segue destination="Loo-VT-KJb" kind="relationship" relationship="viewControllers" id="bDn-Kz-3Vk"/>
+                        <segue destination="ul8-5H-bSL" kind="relationship" relationship="viewControllers" id="d6m-HA-tsF"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhA-Db-fKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1364" y="-282"/>
         </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Stz-yc-hjc">
+            <objects>
+                <viewController id="Kw3-Kp-qpb" customClass="secondViewController" customModule="HackwichThree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TWz-Xn-EOS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uiw-dT-rea">
+                                <rect key="frame" x="64" y="160" width="192" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vg7-rc-wCR">
+                                <rect key="frame" x="133" y="219" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Convert">
+                                    <color key="titleColor" red="0.72340381149999999" green="0.1518343815" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertButtonPressed:" destination="Kw3-Kp-qpb" eventType="touchUpInside" id="rGv-wE-ZZW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyd-od-gIs">
+                                <rect key="frame" x="41" y="338" width="248" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="6Ae-vY-PXQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3BG-27-gUe"/>
+                    <connections>
+                        <outlet property="convertedTemp" destination="xyd-od-gIs" id="CSZ-Pz-BVj"/>
+                        <outlet property="firstTemp" destination="uiw-dT-rea" id="ZbV-zO-tSu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BT7-n4-dDp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.625" y="98.239436619718305"/>
+        </scene>
         <!--About Me-->
         <scene sceneID="AAZ-fO-L3z">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BkA-Fb-59p" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="About Me" image="about" id="vck-SI-3Tc"/>
+                    <tabBarItem key="tabBarItem" title="About Me" image="about" id="vck-SI-3Tc">
+                        <color key="badgeColor" red="0.72340381149999999" green="0.1518343815" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="77a-U2-IYZ">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -173,23 +175,25 @@
             <point key="canvasLocation" x="-412.80000000000001" y="-614.392803598201"/>
         </scene>
         <!--Weather-->
-        <scene sceneID="SnZ-2j-jj4">
+        <scene sceneID="QOy-zg-6LU">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Loo-VT-KJb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Weather" image="sun" id="Kej-14-1Y1"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ul8-5H-bSL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Weather" image="sun" id="d8y-Z1-Njq">
+                        <color key="badgeColor" red="0.72340381149999999" green="0.1518343815" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Nkz-me-Nw0">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Yw7-3t-htc">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="w6U-Ns-SQt" kind="relationship" relationship="rootViewController" id="nLI-Wh-KAv"/>
+                        <segue destination="Kw3-Kp-qpb" kind="relationship" relationship="rootViewController" id="ZfF-hf-i7m"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Iyx-Va-6Ez" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yrj-2Q-8BN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-412.80000000000001" y="50.374812593703155"/>
+            <point key="canvasLocation" x="-376.875" y="98.239436619718305"/>
         </scene>
     </scenes>
     <resources>
